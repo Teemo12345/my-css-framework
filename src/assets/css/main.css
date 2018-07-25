@@ -1,2 +1,6 @@
-@import './base.css';
-@import './layout.css';
+@import './components/base.css';
+@import './components/layout.css';
+@import './components/grid.css';
+@import './components/button.css';
+@import './components/form.css';
+@import './components/utilities.css';

@@ -1,0 +1,8 @@
+.home{
+  display: flex;
+  & > .layout{
+    & .layout-header{background:#ccc;height:80px;}
+    & .layout-silder{border-right:1px solid #ccc;width:200px;}
+    & .layout-main{padding:20px;}
+  }
+}

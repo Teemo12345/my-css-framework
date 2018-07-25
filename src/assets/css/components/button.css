@@ -1,0 +1,102 @@
+@import './root.css';
+.btn{
+  display:inline-block;
+  padding: 5px 10px;
+  background-image:none;
+  border: 1px solid transparent;
+  border-color:#dddee1;
+  cursor: pointer;
+  outline: none;
+  font-size:14px;
+  transition: color .2s linear,background-color .2s linear,border .2s linear,box-shadow .2s linear;
+  &:active{
+    background-color:#f0f0f0;
+  }
+  &:hover{
+    border-color:#999;
+  }
+  &[radius="5px"]{
+    border-radius: 5px;
+  }
+  &[radius="50%"]{
+    border-radius: 50px;
+  }
+  &[size="large"]{
+    font-size:16px;
+    padding: 8px 15px;
+  }
+  &[size="small"]{
+    font-size:12px;
+    padding: 4px 10px;
+  }
+  &[size="mini"]{
+    font-size:12px;
+    padding: 2px 8px;
+  }
+  &[disabled]{
+    opacity: .65;
+    cursor: not-allowed;
+  }
+  &.btn-primary{
+    background-color:var(--primary-color);
+    border-color:color(var(--primary-color) blackness(40%));
+    color:#fff;
+    &:active{
+      background-color:color(var(--primary-color) blackness(50%));
+      border-color:color(var(--primary-color) blackness(70%));
+    }
+  }
+  &.btn-success{
+    background-color:var(--success-color);
+    border-color:color(var(--success-color) blackness(40%));
+    color:#fff;
+    &:active{
+      background-color:color(var(--success-color) blackness(40%));
+      border-color:color(var(--success-color) blackness(70%));
+    }
+  }
+  &.btn-info{
+    background-color:var(--info-color);
+    border-color:color(var(--info-color) blackness(25%));
+    color:#fff;
+    &:active{
+      background-color:color(var(--info-color) blackness(40%));
+      border-color:color(var(--info-color) blackness(70%));
+    }
+  }
+  &.btn-warning{
+    background-color:var(--warning-color);
+    border-color:color(var(--warning-color) blackness(25%));
+    color:#fff;
+    &:active{
+      background-color:color(var(--warning-color) blackness(40%));
+      border-color:color(var(--warning-color) blackness(70%));
+    }
+  }
+  &.btn-danger{
+    background-color:var(--danger-color);
+    border-color:color(var(--danger-color) blackness(25%));
+    color:#fff;
+    &:active{
+      background-color:color(var(--danger-color) blackness(40%));
+      border-color:color(var(--danger-color) blackness(70%));
+    }
+  }
+  &.btn-link{
+    color:var(--link-color);
+    text-decoration: none;
+    background-color:transparent;
+    border-color:transparent;
+    &:active{
+      background-color:transparent;
+      border-color:transparent;
+    }
+    &:hover{
+      color:color(var(--link-color) blackness(80%));
+    }
+  }
+}
+.btn-group{
+  margin-top:10px;
+  & > .btn + .btn{margin-left:10px;}
+}

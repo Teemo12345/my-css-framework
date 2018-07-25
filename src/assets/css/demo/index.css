@@ -1,0 +1,23 @@
+@import "./layout.css";
+@import "./home.css";
+@import "./grid.css";
+#App{
+  & > .layout{
+    & > .layout-header{background:#ccc;height:80px;}
+    & > .layout > .layout-aside{border-right:1px solid #ccc;width:200px;}
+    & > .layout > .layout-main{padding:20px;}
+    & .hide{display: none;}
+    & .show{display: block;}
+    & nav.navigation{
+      display: flex;
+      flex-direction: column;
+      flex: auto;
+      & a{
+        display: block;
+        border-bottom: 1px solid #ccc;
+        padding:10px;
+        width: 100%;
+      }
+    }
+  }
+}

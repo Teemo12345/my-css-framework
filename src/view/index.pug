@@ -1,7 +1,24 @@
 extends ./layout/header.pug
+include ./layout
+include ./grid
+include ./button
+include ./form
 block content
-  //- div home
-  h1 tetst
-  .div1
-    h1 1222
-    .d2 333
+  #App
+    .layout.column
+      header.layout-header demo-header
+      .layout
+        aside.layout-aside
+          - var href = 'javascript:void(0)'
+          nav.navigation
+            a(href= href id="layout" onclick="showPage('page-layout')") Layout-布局
+            a(href= href onclick="showPage('page-grid')") Grid-栅格
+            a(href= href onclick="showPage('page-btn')") Button-按钮
+            a(href= href onclick="showPage('page-form')") Form
+        main.layout-main
+          +layout(class='show')
+          +grid(class='hide')
+          +btn(class='hide')
+          +form(class='hide')
+      footer.layout-footer footer
+  //- +layout()

@@ -1,0 +1,30 @@
+mixin layout()
+  .page-layout.flex-column&attributes(attributes)
+    .layout.column
+      header.layout-header
+        h1 header
+      main.layout-main
+        h1 main
+      footer.layout-footer footer
+    .layout.column
+      header.layout-header
+        h1 header
+      .layout
+        aside.layout-aside.flex-center__center aside
+        main.layout-main
+          h1 main
+      footer.layout-footer footer
+    .layout.column
+      header.layout-header
+        h1 header
+      .layout
+        main.layout-main
+          h1 main
+        aside.layout-aside.flex-center__center aside
+      footer.layout-footer footer
+    .layout
+      aside.layout-aside.flex-center__center aside
+      .layout.column
+        header.layout-header header
+        main.layout-main
+        footer.layout-footer footer

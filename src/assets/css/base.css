@@ -1,9 +1,0 @@
-*{margin:0;padding:0}
-h1{color:#ccc;}
-h2{color:#ccc;}
-.div1{
-  display:flex;flex: 0 1 auto;transform: translateX(100px);
-  & .d2{
-    display: flex;
-  }
-}
