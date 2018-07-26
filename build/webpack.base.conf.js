@@ -10,7 +10,7 @@ module.exports = {
   entry: './src/js/main.js',
   output: {
     filename: assetsSubDirectory + '/js/[name].[hash:5].js',
-    path: path.resolve(__dirname, '../dist')
+    path: path.resolve(__dirname, '../docs')
   },
   resolve: {
     alias: {
@@ -97,7 +97,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(['dist'], {root: path.resolve(__dirname, '../'), verbose: true}),
+    new CleanWebpackPlugin(['docs'], {root: path.resolve(__dirname, '../'), verbose: true}),
     new ExtractTextWebpackPlugin({
       filename: path.posix.join(assetsSubDirectory, '/css/main-[hash:5].css'),
       // allChunks: true
