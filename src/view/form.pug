@@ -6,3 +6,41 @@ mixin form()
     div.p-10
       label input[disabled]
       input.input(placeholder="Enter something..." disabled)
+    .p-10
+      label Radio button
+      label.m-10
+        input(type="radio" name="optRadio")
+        span.ph-5 male
+      label.m-10
+        input(type="radio" name="optRadio")
+        span.ph-5 female
+    .p-10
+      label Checkbox
+      label.m-10
+        span.checkbox
+          input(type="checkbox" name="optCheckbox")
+          span.checkbox-inner
+        span 复选
+      label.m-10
+        span.checkbox
+          input(type="checkbox" name="optCheckbox")
+          span.checkbox-inner
+        span 2
+    .p-10
+      label Switch
+      span.switch.m-10
+        input(type="checkbox" value="false")
+        span.switch-inner
+    .p-10
+      label Select
+      label.m-10
+        select.input
+          option(value="1") A
+          option(value="1") B
+          option(value="1") C
+    .p-10
+      label Slider
+      label.m-10
+        input(type="range" value="0")
+      label.m-10
+        input(type="color" value="0")

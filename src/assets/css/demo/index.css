@@ -3,9 +3,10 @@
 @import "./grid.css";
 #App{
   & > .layout{
-    & > .layout-header{background:#ccc;height:80px;}
+    & > .layout-header{border:1px solid #ccc;height:80px;line-height: 80px;text-align: center;}
     & > .layout > .layout-aside{border-right:1px solid #ccc;width:200px;}
-    & > .layout > .layout-main{padding:20px;}
+    & > .layout > .layout-main{padding:20px;height:calc(100vh-160px);overflow-y: auto;}
+    & > .layout-footer{border:1px solid #ccc;height:80px;line-height: 80px;text-align: center;}
     & .hide{display: none;}
     & .show{display: block;}
     & nav.navigation{
@@ -17,6 +18,9 @@
         border-bottom: 1px solid #ccc;
         padding:10px;
         width: 100%;
+        &.active{
+          color: rebeccapurple;
+        }
       }
     }
   }
